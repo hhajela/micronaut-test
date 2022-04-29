@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: micronautguide
+netty:
+  default:
+    allocator:
+      max-order: 3
+foo:
+  config:
+    barBlah:
+      a.b.c-d: value1
+      e.f.g-h: value2
+      e.fooBarBlah: value3
+    fooBar: something
