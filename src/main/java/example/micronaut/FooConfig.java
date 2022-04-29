@@ -14,7 +14,7 @@ public class FooConfig {
 
   @ConfigurationInject
   public FooConfig(String fooBar,
-    @MapFormat(transformation = MapFormat.MapTransformation.FLAT) Map<String, String> barBlah) {
+    @MapFormat(transformation = MapFormat.MapTransformation.FLAT, keyFormat = StringConvention.RAW) Map<String, String> barBlah) {
     this.fooBar = fooBar;
     this.barBlah = barBlah;
   }
